@@ -1,0 +1,16 @@
+<script>
+    var weight, rost, index;
+    
+    weight=prompt('Каков Ваш вес в кг?', 0 );
+    rost=prompt('Каков ваш рост в сантиметрах', 0);
+    index= weight*10000/(rost*rost);
+    if (index>24.99) {
+        alert(index + ' - Избыточная масса тела');
+        } else {
+            if (index<18,5) {
+                alert (index + ' - Дефицит массы тела');
+                } else {
+                alert (index + ' - Нормальная масса тела');
+            }
+        }
+</script>

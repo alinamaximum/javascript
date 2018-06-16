@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Мышь</title>
+        <script>
+             function hell() {
+                alert ('Добро пожаловать в лучший ресторан на планете');
+            }
+            var change=5000;
+            function pagetime() {
+                alert ('Прошло 5 секунд');
+            }
+            function price() {
+                alert ('Цена за порцию 100 рублей');
+                alert ('Долго думаете, цена теперь 200 рублей');
+            }
+            function price2() {
+                alert ('Цена за порцию 300 рублей');
+                alert ('Долго думаете, цена теперь 600 рублей');
+            }
+        </script>
+    </head>
+<body onload="setInterval ('pagetime()', change)">
+    <h1>Самый лучший ресторан на планете</h1>
+    <input type=button value="Hell..." onclick="hell()">
+    <h2>Сделайте заказ</h2>
+    <a href="https://www.youtube.com/watch?v=A1Qb4zfurA8" onmouseover="price();"> Котлетки с пюрешкой</a>
+    <br>
+    <a href="#" onmouseover="price2();"> Макарончики</a>
+</body> 
+</html>

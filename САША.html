@@ -1,0 +1,25 @@
+<script> 
+        function calculateSalary (sarplata) { 
+        if (sarplata<100000) { 
+        var oklad = sarplata-(sarplata*0.35); 
+        console.log(oklad); 
+        } 
+        else 
+        { 
+        var oklad = sarplata-(sarplata*0.45); 
+        } 
+        return oklad; 
+        } 
+        
+        var sarplata = prompt('Введите оклад', 100); 
+        alert('Чистый оклад с вычетами = ' + calculateSalary(sarplata)); 
+        
+        var ok = confirm('Продолжить вычисления?'); 
+        while (ok){ 
+        sarplata = prompt('Введите оклад', 100); 
+        alert ('Чистый оклад с вычетами = ' + calculateSalary(sarplata)); 
+        var ok = confirm('Продолжить вычисления?'); 
+        } 
+        </script>
+         
+        Ещё

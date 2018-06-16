@@ -1,0 +1,26 @@
+
+<html> 
+    <head>
+        <title>Всплывание событий</title>
+    </head>
+
+<body onclick="alert ('Вы клинули по body');">
+        <h1>Body</h1>
+        <BODY>
+            <div onclick= "alert ('Внешний блок DIV');" 
+            style = "border-style: 
+            solid; width:330; height: 330; color:red">
+            Привет Иван Иванович.
+                <div onclick = "alert('Внутренний блок DIV');" 
+                style = "border-style:
+                solid; width: 250; height: 250; color:blue">
+                DIV <br>
+                    <span onclick="alert ('Элемент SPAN - ниcший уровень');"                         style="border-style: solid; width: 100; height:100; color: yellow;">
+                    SPAN
+                    </span>
+                </div>
+            </div>
+        </BODY>
+</body>
+
+</html>
